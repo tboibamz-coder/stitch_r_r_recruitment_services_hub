@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Employer Hub | R&amp;R Recruitment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "surface-container-low": "#f6f3f2",
+                    "surface": "#fcf9f8",
+                    "primary-fixed-dim": "#aec7f6",
+                    "secondary-container": "#fed65b",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-primary-container": "#708ab5",
+                    "surface-container-highest": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1c1b1b",
+                    "secondary": "#735c00",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface-variant": "#44474e",
+                    "secondary-fixed": "#ffe088",
+                    "on-error": "#ffffff",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "tertiary": "#100900",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1c1b1b",
+                    "outline-variant": "#c4c6cf",
+                    "tertiary-container": "#2d1f00",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary": "#000a1e",
+                    "surface-tint": "#465f88",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#aec7f6",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#001b3d",
+                    "tertiary-fixed": "#ffdfa0",
+                    "on-tertiary-container": "#ae8100",
+                    "primary-container": "#002147",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "on-secondary-fixed-variant": "#574500",
+                    "tertiary-fixed-dim": "#fbbc00",
+                    "outline": "#74777f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "80px",
+                    "stack-lg": "32px",
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Open Sans"
+                    ],
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "headline-sm": [
+                            "Montserrat"
+                    ],
+                    "label-caps": [
+                            "Montserrat"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Open Sans"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        .pattern-bg {
+            background-image: radial-gradient(var(--tw-colors-primary-container) 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md font-display-lg text-headline-sm font-headline-sm docked full-width top-0 sticky border-b border-outline-variant/30 shadow-sm transition-all duration-300 ease-in-out z-40">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a href="index.html" style="text-decoration:none;" class="font-display-lg text-headline-sm font-bold text-primary dark:text-primary-fixed">
+                R&amp;R Recruitment
+            </a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="index.html">Home</a>
+<a class="text-primary font-bold border-b-2 border-secondary hover:text-secondary transition-all" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="jobs.html">Jobs</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="resources.html">Blog</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="contact.html">Contact</a>
+</nav>
+<div class="hidden md:flex gap-4 items-center">
+<button class="text-primary border border-primary px-6 py-2 rounded font-headline-sm text-body-md font-semibold hover:bg-primary hover:text-on-primary transition-colors">
+                    Find a Job
+                </button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-headline-sm text-body-md font-semibold hover:bg-primary-container transition-colors shadow-sm">
+                    Hire Talent
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section with Form -->
+<section class="relative bg-surface-container-low py-section-gap overflow-hidden">
+<div class="absolute inset-0 pattern-bg"></div>
+<div class="relative max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-center">
+<!-- Hero Copy (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-stack-md z-10">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Employer Hub</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+                        Find the Exact Talent Your Business Needs to Thrive in Lagos.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Partner with R&amp;R Recruitment. We blend deep local market knowledge with a rigorous screening process to deliver high-performing professionals who align with your corporate culture.
+                    </p>
+<!-- Trust Indicators -->
+<div class="flex flex-wrap gap-6 mt-stack-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="lock" data-weight="fill">lock</span>
+<span class="font-headline-sm text-body-md text-primary font-semibold">Strict Confidentiality</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="speed" data-weight="fill">speed</span>
+<span class="font-headline-sm text-body-md text-primary font-semibold">Fast Turnaround</span>
+</div>
+</div>
+</div>
+<!-- Lead Capture Form (5 cols) -->
+<div class="lg:col-span-5 bg-surface rounded-xl shadow-[0px_4px_20px_rgba(0,33,71,0.05)] p-8 border border-surface-container-highest z-10 relative">
+<h3 class="font-headline-md text-headline-sm text-primary mb-6">Submit Your Hiring Brief</h3>
+<form class="flex flex-col gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="coName">Company Name*</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="coName" placeholder="Acme Corp" type="text"/>
+</div>
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="contactName">Contact Name*</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="contactName" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="email">Corporate Email*</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="email" placeholder="john@acme.com" type="email"/>
+</div>
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="phone">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="phone" placeholder="+234..." type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="role">Role(s) to Fill*</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="role" placeholder="e.g. Senior Financial Analyst" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="vacancies">No. of Vacancies</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="vacancies">
+<option>1</option>
+<option>2 - 5</option>
+<option>5+</option>
+</select>
+</div>
+<div>
+<label class="block font-headline-sm text-body-md text-primary font-semibold mb-1" for="timeline">Hiring Timeline</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 text-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" id="timeline">
+<option>ASAP</option>
+<option>Within 30 Days</option>
+<option>1 - 3 Months</option>
+</select>
+</div>
+</div>
+<button class="mt-4 w-full bg-primary text-on-primary py-4 rounded font-headline-sm text-body-md font-bold hover:bg-primary-container hover:shadow-md transition-all" type="submit">
+                            Submit Brief
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-stack-lg max-w-3xl mx-auto">
+<h2 class="font-display-lg text-headline-md text-primary mb-4">Our Streamlined Hiring Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We handle the heavy lifting of recruitment, so you can focus on running your business. Our proven three-step methodology ensures quality and efficiency.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Connecting Line (Desktop only) -->
+<div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-outline-variant/30 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex flex-col items-center text-center bg-surface-container-lowest p-8 rounded-xl border border-surface-container-high hover:-translate-y-1 hover:shadow-[0px_4px_20px_rgba(0,33,71,0.05)] transition-all duration-300">
+<div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-[40px]" data-icon="description">description</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-primary mb-3">1. Submit Brief</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Share your organizational needs, culture, and specific role requirements via our secure portal or a brief consultation.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex flex-col items-center text-center bg-surface-container-lowest p-8 rounded-xl border border-surface-container-high hover:-translate-y-1 hover:shadow-[0px_4px_20px_rgba(0,33,71,0.05)] transition-all duration-300">
+<div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-[40px]" data-icon="search_check">search_check</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-primary mb-3">2. We Search &amp; Screen</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Our experts leverage extensive local networks to source, vet, and shortlist only the most qualified candidates.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex flex-col items-center text-center bg-surface-container-lowest p-8 rounded-xl border border-surface-container-high hover:-translate-y-1 hover:shadow-[0px_4px_20px_rgba(0,33,71,0.05)] transition-all duration-300">
+<div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 shadow-sm">
+<span class="material-symbols-outlined text-[40px]" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-primary mb-3">3. You Interview &amp; Hire</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Review our curated shortlist, conduct final interviews, and seamlessly onboard your next high-impact team member.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Direct Contact / Reassurance Section -->
+<section class="py-section-gap bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h2 class="font-display-lg text-headline-md mb-4 text-on-primary">Need Immediate Assistance?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-8">
+                        Our executive recruitment specialists are available to discuss complex hiring needs, executive search mandates, or high-volume recruitment drives across Nigeria.
+                    </p>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-4 bg-primary-container p-4 rounded-lg hover:bg-surface-tint transition-colors border border-on-primary-fixed-variant" href="tel:+2348000000000">
+<div class="bg-secondary text-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-primary-container uppercase tracking-wider">Direct Line</div>
+<div class="font-headline-sm text-body-lg font-bold text-on-primary">+234 (0) 800 000 0000</div>
+</div>
+</a>
+<a class="flex items-center gap-4 bg-primary-container p-4 rounded-lg hover:bg-surface-tint transition-colors border border-on-primary-fixed-variant" href="mailto:employers@rr-recruitment.com">
+<div class="bg-secondary text-primary w-12 h-12 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-primary-container uppercase tracking-wider">Email Us</div>
+<div class="font-headline-sm text-body-lg font-bold text-on-primary">employers@rr-recruitment.com</div>
+</div>
+</a>
+</div>
+</div>
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg border-4 border-surface-tint/30">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A professional corporate setting in Lagos, Nigeria. Two sharply dressed executives, one male and one female, are engaged in a serious but positive discussion across a sleek glass conference table. The room features modern architecture with expansive windows letting in bright, natural light, creating a high-key, modern aesthetic. The color palette emphasizes deep navy blues from their suits, contrasted against crisp whites and subtle amber sunlight, reflecting a premium, authoritative, yet human-centric brand identity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQpGAOaLccaNtYUfEAulNBIzQb3PYM1FmXUvNkgL8nDAX_f0998Woqy0Wk6NHuC2tDnER-gEV2lRjiKnZ6m8BEQIoRGaf-7Ly1Md3Map-XhXDctUeiOQ16bkHT_SZkZi7dShP5Zk9cfNILDwc04W33NtyRhyLTqTUW7RxwpFHlusVogwYTinRE_np1kYzBdpQK9WBM67DAAvKfgrpepntGoKPDTQMWU_JbbscUM_vtEd0pi_wphWjD1KTspmiQR1UlIkkJ8O3c-BQ');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<div class="font-headline-sm text-headline-sm text-secondary mb-2">"Their understanding of the Lagos talent pool is unmatched."</div>
+<div class="font-body-md text-body-md text-on-primary/80">— HR Director, Leading Nigerian Fintech</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary font-body-md text-body-md full-width mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-section-gap max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<div class="font-display-lg text-headline-md font-bold text-secondary-fixed">
+                    R&amp;R Recruitment
+                </div>
+<p class="text-on-primary/70">
+                    © 2024 R&amp;R Recruitment Services Limited. All rights reserved. Built for the Lagos professional landscape.
+                </p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-primary/70 hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="text-on-primary/70 hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200" href="#">Terms of Service</a>
+<a class="text-on-primary/70 hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200" href="#">Cookie Policy</a>
+<a class="text-on-primary/70 hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+<!-- FloatingWhatsApp -->
+<a aria-label="Chat with a Consultant" class="bg-secondary text-on-secondary font-label-caps text-label-caps fixed bottom-8 right-8 rounded-full p-4 shadow-lg shadow-primary/20 scale-100 hover:scale-110 hover:shadow-xl transition-all z-50 flex items-center justify-center group" href="#">
+<span class="material-symbols-outlined text-[32px]" data-icon="chat">chat</span>
+<!-- Tooltip -->
+<span class="absolute right-full mr-4 bg-surface text-on-surface px-3 py-1 rounded shadow-md text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-outline-variant/30">
+            Chat with a Consultant
+        </span>
+</a>
+<script src="nav.js"></script>
+</body></html>

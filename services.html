@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - R&amp;R Recruitment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "surface-container-low": "#f6f3f2",
+                    "surface": "#fcf9f8",
+                    "primary-fixed-dim": "#aec7f6",
+                    "secondary-container": "#fed65b",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-primary-container": "#708ab5",
+                    "surface-container-highest": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1c1b1b",
+                    "secondary": "#735c00",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface-variant": "#44474e",
+                    "secondary-fixed": "#ffe088",
+                    "on-error": "#ffffff",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#2d476f",
+                    "tertiary": "#100900",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1c1b1b",
+                    "outline-variant": "#c4c6cf",
+                    "tertiary-container": "#2d1f00",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary": "#000a1e",
+                    "surface-tint": "#465f88",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#aec7f6",
+                    "surface-container": "#f0eded",
+                    "on-primary-fixed": "#001b3d",
+                    "tertiary-fixed": "#ffdfa0",
+                    "on-tertiary-container": "#ae8100",
+                    "primary-container": "#002147",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#745c00",
+                    "on-secondary-fixed-variant": "#574500",
+                    "tertiary-fixed-dim": "#fbbc00",
+                    "outline": "#74777f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "80px",
+                    "stack-lg": "32px",
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Open Sans"
+                    ],
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "headline-sm": [
+                            "Montserrat"
+                    ],
+                    "label-caps": [
+                            "Montserrat"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Open Sans"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-lg">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300 ease-in-out z-40 border-b border-outline-variant/30 hidden md:block">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<a href="index.html" style="text-decoration:none;" class="font-display-lg text-headline-sm font-bold text-primary dark:text-primary-fixed">
+                R&amp;R Recruitment
+            </a>
+<ul class="flex space-x-gutter items-center">
+<li><a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="index.html">Home</a></li>
+<li><a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-secondary font-body-md text-body-md" href="services.html">Services</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="jobs.html">Jobs</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="about.html">About</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="resources.html">Blog</a></li>
+<li><a class="text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="contact.html">Contact</a></li>
+</ul>
+<div class="flex space-x-stack-md">
+<button class="font-label-caps text-label-caps border border-primary text-primary px-4 py-2 rounded hover:bg-surface-variant transition-colors">Find a Job</button>
+<button class="font-label-caps text-label-caps bg-primary text-on-primary px-4 py-2 rounded hover:bg-primary-container transition-colors">Hire Talent</button>
+</div>
+</div>
+</nav>
+<!-- Mobile TopNavBar Placeholder (Simplification for constraint) -->
+<nav class="md:hidden flex justify-between items-center w-full px-margin-mobile h-20 bg-surface border-b border-outline-variant/30 sticky top-0 z-40">
+<div class="font-display-lg-mobile text-headline-sm font-bold text-primary">R&amp;R</div>
+<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+</nav>
+<!-- Hero Section -->
+<header class="relative bg-surface-container py-section-gap px-margin-mobile md:px-gutter text-center border-b border-surface-dim">
+<div class="max-w-container-max mx-auto">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-stack-md">Our Professional Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-stack-lg">Comprehensive staffing and career solutions bridging the gap between exceptional talent and leading organizations in the Lagos business landscape.</p>
+</div>
+</header>
+<!-- Main Content -->
+<main class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto space-y-section-gap">
+<!-- Employers Section -->
+<section>
+<div class="mb-stack-lg text-center md:text-left border-b border-surface-dim pb-stack-sm">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center justify-center md:justify-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="business_center">business_center</span>
+                    For Employers
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Strategic talent acquisition and workforce management solutions designed to scale your business with the right professionals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Service Card 1 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="person_add">person_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Permanent Placement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Sourcing and securing top-tier professionals for long-term integration into your corporate culture and strategic goals.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="timer">timer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Contract/Temporary Staffing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Agile workforce solutions for project-based needs, seasonal peaks, or specialized short-term requirements.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="search_insights">search_insights</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Executive Search</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Discreet, targeted headhunting to identify and engage transformative C-level leaders and senior executives.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 4 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Staff Outsourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Comprehensive management of your non-core workforce, allowing you to focus entirely on primary business objectives.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 5 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="handshake">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">HR Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Expert advisory on organizational structure, compliance, employee relations, and performance management.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 6 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="payments">payments</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Payroll Management</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Accurate, compliant, and timely payroll processing solutions to streamline your financial administration.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 7 -->
+<div class="md:col-span-4 bg-surface rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-surface-dim flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="model_training">model_training</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Training &amp; Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Customized upskilling programs to enhance workforce capability, leadership skills, and operational excellence.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Job Seekers Section -->
+<section>
+<div class="mb-stack-lg text-center md:text-left border-b border-surface-dim pb-stack-sm">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center justify-center md:justify-start gap-stack-sm">
+<span class="material-symbols-outlined text-secondary" data-icon="work">work</span>
+                    For Job Seekers
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm">Empowering your career journey with personalized guidance, industry insights, and access to premium opportunities.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Service Card 1 -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-outline-variant/50 flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="description">description</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">CV/Resume Assistance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Professional resume writing and optimization to effectively highlight your unique value proposition to top employers.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-outline-variant/50 flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="join_inner">join_inner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Job Matching &amp; Placement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Connecting you with exclusive corporate roles that align perfectly with your skills, experience, and career aspirations.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,33,71,0.05)] hover:shadow-[0px_8px_30px_rgba(0,33,71,0.08)] hover:-translate-y-0.5 transition-all duration-300 border border-outline-variant/50 flex flex-col h-full group">
+<div class="mb-stack-md">
+<span class="material-symbols-outlined text-4xl text-secondary group-hover:scale-110 transition-transform" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Career Counselling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-stack-lg">Strategic advisory sessions to navigate career transitions, interview preparation, and long-term professional planning.</p>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary flex items-center gap-2 mt-auto w-fit transition-colors group/link" href="#">
+                        Get Started <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container font-body-md text-body-md transition-opacity duration-200 mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-display-lg text-headline-md font-bold text-secondary-fixed mb-stack-sm">R&amp;R Recruitment</div>
+<p class="text-on-primary/80 font-body-md text-body-md mb-stack-md">Built for the Lagos professional landscape.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer transition-colors" data-icon="mail">mail</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer transition-colors" data-icon="call">call</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer transition-colors" data-icon="location_on">location_on</span>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col justify-center">
+<ul class="flex flex-col md:flex-row gap-stack-md md:gap-gutter text-on-primary/70">
+<li><a class="hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Terms of Service</a></li>
+<li><a class="hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Cookie Policy</a></li>
+<li><a class="hover:text-secondary-fixed hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="md:col-span-1 flex items-end md:justify-end text-sm text-on-primary/50">
+<p>© 2024 R&amp;R Recruitment Services Limited. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- FloatingWhatsApp -->
+<a aria-label="Chat with a Consultant" class="fixed bottom-8 right-8 z-50 flex items-center justify-center bg-secondary dark:bg-secondary-container text-on-secondary dark:text-on-secondary-container font-label-caps text-label-caps rounded-full p-4 shadow-lg shadow-primary/20 scale-100 hover:scale-110 hover:shadow-xl transition-all Active: scale-95 transition-transform group" href="#">
+<span class="material-symbols-outlined text-2xl" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+<!-- Tooltip -->
+<span class="absolute right-full mr-4 bg-surface text-primary px-3 py-1 rounded shadow text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-outline-variant/30 hidden md:block">
+            Chat with a Consultant
+        </span>
+</a>
+<script src="nav.js"></script>
+</body></html>
