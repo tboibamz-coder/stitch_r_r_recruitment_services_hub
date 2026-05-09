@@ -86,4 +86,15 @@
       }
     });
   }
+
+  // WhatsApp floating button handler (for pages where button is not an <a>)
+  document.querySelectorAll('[aria-label="Chat on WhatsApp"], [aria-label="Chat with a Consultant"]').forEach(function (el) {
+    if (el.tagName === 'BUTTON' || !el.getAttribute('href') || el.getAttribute('href') === '#') {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open('https://wa.me/2347040950515', '_blank', 'noopener,noreferrer');
+      });
+    }
+  });
 })();
